@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Youtube imitation project</title>
+</head>
+<body>
+    <!-- menu bar on top, including the search bar and login for the user,, divided in 3 sections-->
+    <!--the first section goes on the top left-->
+    <div class="menubartop">
+        <div class="left">
+    <span class="menu"><i class="fas fa-bars"></i></span>
+    <span class="logo"><img src="./img/logotrans.png" id="logo"></span>
+    </div>
+    <!--this section goes in the top center-->
+    <div class="center">
+    <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search" id="search"></i>
+          </button>
+        </div>
+        </div>
+     </div>
+    <!--this section goes on the top right-->
+     <div class="right">
+    <i class="fas fa-video"></i> 
+    <i class="fas fa-th"></i>
+    <i class="fas fa-list"></i>
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-user"></i>
+    </div>
+</div>
+
+<!-- Side bar container, with the youtube user menu -->
+  <section class="container">
+    <section class="options">
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-burn"></i>Trends</li>
+            <li><i class="fab fa-youtube-square"></i>Subscription</li>
+            <li><i class="far fa-file-video"></i>Library</li>
+            <li><i class="fas fa-history"></i> History</li>
+            <li><i class="fab fa-youtube"></i></i> Your videos</li>
+            <li><i class="fas fa-clock"></i></i> Watch later</li>
+            <li><i class="fab fa-leanpub"></i></i> To learn</li>
+            <li><i class="fas fa-arrow-down"></i></i>Show more</li>
+        </ul>
+    <hr class="line">
+<!--this part is for the subscribed channels -->
+
+     <h5>SUBSCRIPTIONS</h5>
+       <ul>
+          <li id="subs"><img src="./img/zoella.jpeg" id="pic">   Zoella</li>
+          <li id="subs"><img src="./img/alan.jpeg" id="pic">   Alan x el mundo</li>
+          <li id="subs"><img src="./img/gordon.jpeg" id="pic">   Gordom Ramsay</li>
+      </ul>
+
+  </section>
+
+    <!--this is the second header with the MAIN MENU-->
+    <div class="main-content">
+        <section>
+            <ul>
+                <li>HOME</li>
+                <li>VIDEOS</li>
+                <li>PLAYLIST</li>
+                <li>COMMUNITY</li>
+                <li>CHANNELS</li>
+                <li>ABOUT</li>
+                <i class="fas fa-search"></i>
+            </ul>
+        </section>
+
+    <!--from here display the youtube channels-->
+    <section>
+        <div class="uploads">
+            <ul>
+                <li><b>Uploads</b></li>
+                <li><i class="fas fa-play"></i>    PLAY ALL</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+    <div class="ytchannels1">
+        <div class="channel1"><img src="./img/content1.jpeg" alt="youtuber" id="youtuber"> 
+            <span class="captionTop">New Game</span>
+            <span class="captionBottom">25k views - 14 hours ago</span></div>
+
+        <div class="channel2"> <img src="./img/content2.jpeg" alt="youtuber" id="youtuber"> 
+            <span class="captionTop">How to become a millionaire?</span>
+            <span class="captionBottom">25k views - 14 hours ago</span> </div>
+
+        <div class="channel3"><img src="./img/content3.jpeg" alt="youtuber" id="youtuber">
+            <span class="captionTop">Fake news</span>
+            <span class="captionBottom">25k views - 14 hours ago</span> </div>
+
+        <div class="channel4"><img src="./img/content4.jpeg" alt="youtuber" id="youtuber">
+            <span class="captionTop">How to start a travel youtube channel</span>
+            <span class="captionBottom">1M views 12 hours ago</span></div>
+    </div>  
+</section>
+    <section>
+        <div class="popularUploads">
+            <ul>
+                <li><b>Popular Uploads</b></li>
+                <li><i class="fas fa-play"></i>    PLAY ALL</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+    <div class="ytchannels2">
+        <div class="channel5">
+            <img src="./img/content5.jpeg" alt="youtuber" id="youtuber">
+            <span class="captionTop">FOTOTRAVEL</span>
+            <span class="captionBottom">Friday DYI</span>
+            <span class="views">4.8M views - 3 years ago</span>
+        </div>
+
+        <div class="channel6"><img src="./img/content6.jpeg" alt="youtuber" id="youtuber"> 
+            <span class="captionTop">MAKE UP FUN</span>
+            <span class="captionBottom">Low cost makeup haul</span>
+            <span class="views">2M views - 1 week ago</span></div>
+
+        <div class="channel7"> <img src="./img/content7.jpeg" alt="youtuber" id="youtuber">
+            <span class="captionTop">KATIA KENZ</span>
+            <span class="captionBottom">Spring Haul</span>
+            <span class="views">250K views - 4 weeks ago</span></div>
+
+        <div class="channel8"><img src="./img/content8.jpeg" alt="youtuber" id="youtuber">
+            <span class="captionTop">HEALTHY DIARIES</span>
+            <span class="captionBottom">HEALTHY RECIPE BLOG ep444</span>
+            <span class="views">T120K views - 3 weeks ago</span></div>
+    </div>
+       </section> 
+
+
+
+    </div>
+  </section>
+</body>
+</html>

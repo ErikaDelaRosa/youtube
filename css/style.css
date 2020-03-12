@@ -1,0 +1,214 @@
+body{
+    background-color:white;
+    color:black;
+}
+
+/*this section includes the main menu bar on the top divided on 3 sections*/
+i{
+    color:black;
+    font-weight: 14px;
+    width:15px;
+    height: 15px;
+}
+.menubartop {
+    width: auto;
+    height: 5vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    /*align-content: space-between;*/
+    background-color: white;
+}
+.wrap { /*/search bar*/
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;;
+}
+#logo{
+    width:4rem ;
+    height: 3.5rem;
+}
+
+.left{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.center{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    align-content: space-between;
+    align-content: center;
+}
+.right{
+    align-self:flex-end;
+    display:flex;
+    align-content: space-between;
+}
+.right i{
+    margin-right:20px;
+    align-self: baseline;
+    align-content: space-between;
+}
+
+/*left MENU of the page*/
+.options {
+    height: auto;
+    width: 16vw;
+    /* display:flex; */
+    /* flex-direction:column; */
+    justify-content:space-between;
+    line-height: 1.5rem;
+    background-color: darkgrey;
+    flex:center;   
+}
+.options ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+}
+.options i{
+    margin-right: 1rem;;
+}
+li {
+   padding-bottom: 10px;
+}
+h5{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    border-bottom: 1px solid black;
+    width: 3ßpx;
+}
+#listsubs {
+    flex: auto;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#pic{
+    width: 24px;
+    height: 20px;
+    border-radius: 50%;
+}
+/*here start the header, below the main menu*/
+header{
+    width: 100vw;
+    height: 5vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+header ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 100px;
+    list-style-type: none;
+}
+/*Here start the side bar container*/
+.container{
+    display: flex;
+}
+.main-content ul {
+    width: auto;
+    height:35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+/*here start the main menu*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+.main-content li{
+    margin-left: 2rem;
+}
+
+/*The uploads section, where user can check all the content of the channel*/
+.uploads{
+    width: auto;
+    height: 5vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+}
+/*start the youtube channels section*/
+#youtuber{
+    width: 200px;
+    height: 150px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border:black;
+}
+.ytchannels1 {
+    justify-content: space-around;
+    flex-direction:row;
+    align-content: space-evenly;
+    flex-flow:row;
+    align-items: center;
+    display:inline-flex;
+    padding:4vh 4vh;
+    display:flex;
+}
+
+.channel4 .captionTop{
+   display:
+}
+
+.popularUploads {
+    width: auto;
+    height: 5vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ytchannels2 {
+    align-content: space-around;
+    display:flex;
+    flex-direction:row;
+    flex-flow:row;
+    align-items: center;
+    padding:40px 40px;
+}
+
+.captionTop {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.captionBottom {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color:grey;
+    overflow: hidden;
+}
+.views {
+    display:block;
+    font-size: 12px;
+    text-align: left;
+    color:grey;
+}
