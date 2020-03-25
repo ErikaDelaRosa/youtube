@@ -1,13 +1,14 @@
 body{
     background-color:white;
     color:black;
+    margin:4rem;
 }
 
 /*this section includes the main menu bar on the top divided on 3 sections*/
 i{
     color:black;
     font-weight: 14px;
-    width:15px;
+    width:18px;
     height: 15px;
 }
 .menubartop {
@@ -18,7 +19,6 @@ i{
     flex-direction: row; 
     justify-content: space-between;
     /*align-content: space-between;*/
-    background-color: white;
 }
 .wrap { /*/search bar*/
     font-size: 25px;
@@ -58,6 +58,82 @@ i{
     margin-right:20px;
     align-self: baseline;
     align-content: space-between;
+}
+/*here i add the style/shape of the switch button between two modes*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+ 
+  /*always inside the switch i have to style the little piece inside -slider*/
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; /*i thought i didn't need the top,left, right and bottom but i do - otherwise its not center*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    animation-name: switch;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  /*style of the big box that contains the slider. How the mouse will affect it*/
+  input:checked + .slider {
+    background-color: rgb(22, 18, 18);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  /*makes the movement to the right-left*/
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /*shape of the inner piece */
+/*the border of outside the square that contains the switch*/
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*to create a transition effect inside the button from white to black*/
+@keyframes switch {
+    20% {
+        background-color:#D9D9D9;
+    }
+    40% {
+        background-color: #737373;
+    }
+    60% {
+        background-color: #404040; 
+    }
+    80% {
+        background-color:#262626;
+    }
+    100% {
+        background-color:#0D0D0D;
+    }
 }
 
 /*left MENU of the page*/
@@ -153,21 +229,23 @@ header ul {
 #youtuber{
     width: 200px;
     height: 150px;
+    border:20px;
+    padding:20px;
 }
 img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border:black;
 }
 .ytchannels1 {
+    display:flex;
     justify-content: space-around;
     flex-direction:row;
-    align-content: space-evenly;
+    align-content: space-around;
     flex-flow:row;
     align-items: center;
     display:inline-flex;
     padding:4vh 4vh;
-    display:flex;
 }
 
 .channel4 .captionTop{
@@ -184,8 +262,8 @@ img {
 }
 
 .ytchannels2 {
-    align-content: space-around;
     display:flex;
+    align-content: space-around;
     flex-direction:row;
     flex-flow:row;
     align-items: center;
@@ -205,6 +283,8 @@ img {
     text-align: left;
     color:grey;
     overflow: hidden;
+    /*border:20px;
+    padding:20px;*/
 }
 .views {
     display:block;
@@ -212,3 +292,11 @@ img {
     text-align: left;
     color:grey;
 }
+/*
+.channels-row .div {
+    display: flex;
+    align-content: space-between;
+    align-items: space-between;
+    padding:3vh;
+}
+*/

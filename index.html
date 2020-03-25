@@ -33,6 +33,23 @@
     <i class="fas fa-list"></i>
     <i class="fas fa-bell"></i>
     <i class="fas fa-user"></i>
+
+    <!--i have to add a switch button that will change the light and dark mode of the page-->
+    <!--so far only DARK mode works-->
+
+    <label class="switch">
+        <input type="checkbox" onclick="body.style.backgroundColor = '#262626';body.style.color ='white';">
+        
+        <!--if (checkbox = true) {
+            onclick="body.style.backgroundColor = '#262626';
+            body.style.color ='white';"
+        }else {
+            onclick="body.style.backgroundColor = '#D9D9D9';
+            body.style.color ='black';"
+            }
+        }> -->
+        <span class="slider round"></span>
+      </label>
     </div>
 </div>
 
@@ -85,7 +102,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section id="channels-row">
     <div class="ytchannels1">
         <div class="channel1"><img src="./img/content1.jpeg" alt="youtuber" id="youtuber"> 
             <span class="captionTop">New Game</span>
@@ -112,7 +129,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section class="channels-row">
     <div class="ytchannels2">
         <div class="channel5">
             <img src="./img/content5.jpeg" alt="youtuber" id="youtuber">
