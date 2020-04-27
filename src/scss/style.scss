@@ -1,0 +1,302 @@
+body{
+    background-color:white;
+    color:black;
+    margin:4rem;
+}
+
+/*this section includes the main menu bar on the top divided on 3 sections*/
+i{
+    color:black;
+    font-weight: 14px;
+    width:18px;
+    height: 15px;
+}
+.menubartop {
+    width: auto;
+    height: 5vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    /*align-content: space-between;*/
+}
+.wrap { /*/search bar*/
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;;
+}
+#logo{
+    width:4rem ;
+    height: 3.5rem;
+}
+
+.left{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.center{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    align-content: space-between;
+    align-content: center;
+}
+.right{
+    align-self:flex-end;
+    display:flex;
+    align-content: space-between;
+}
+.right i{
+    margin-right:20px;
+    align-self: baseline;
+    align-content: space-between;
+}
+/*here i add the style/shape of the switch button between two modes*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+ 
+  /*always inside the switch i have to style the little piece inside -slider*/
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; /*i thought i didn't need the top,left, right and bottom but i do - otherwise its not center*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    animation-name: switch;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  /*style of the big box that contains the slider. How the mouse will affect it*/
+  input:checked + .slider {
+    background-color: rgb(22, 18, 18);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  /*makes the movement to the right-left*/
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /*shape of the inner piece */
+/*the border of outside the square that contains the switch*/
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*to create a transition effect inside the button from white to black*/
+@keyframes switch {
+    20% {
+        background-color:#D9D9D9;
+    }
+    40% {
+        background-color: #737373;
+    }
+    60% {
+        background-color: #404040; 
+    }
+    80% {
+        background-color:#262626;
+    }
+    100% {
+        background-color:#0D0D0D;
+    }
+}
+
+/*left MENU of the page*/
+.options {
+    height: auto;
+    width: 16vw;
+    /* display:flex; */
+    /* flex-direction:column; */
+    justify-content:space-between;
+    line-height: 1.5rem;
+    background-color: darkgrey;
+    flex:center;   
+}
+.options ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+}
+.options i{
+    margin-right: 1rem;;
+}
+li {
+   padding-bottom: 10px;
+}
+h5{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    border-bottom: 1px solid black;
+    width: 3ßpx;
+}
+#listsubs {
+    flex: auto;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#pic{
+    width: 24px;
+    height: 20px;
+    border-radius: 50%;
+}
+/*here start the header, below the main menu*/
+header{
+    width: 100vw;
+    height: 5vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+header ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 100px;
+    list-style-type: none;
+}
+/*Here start the side bar container*/
+.container{
+    display: flex;
+}
+.main-content ul {
+    width: auto;
+    height:35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+/*here start the main menu*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+.main-content li{
+    margin-left: 2rem;
+}
+
+/*The uploads section, where user can check all the content of the channel*/
+.uploads{
+    width: auto;
+    height: 5vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+}
+/*start the youtube channels section*/
+#youtuber{
+    width: 200px;
+    height: 150px;
+    border:20px;
+    padding:20px;
+}
+img {
+    width: 140px;
+    height: 140px;
+    border:black;
+}
+.ytchannels1 {
+    display:flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-content: space-around;
+    flex-flow:row;
+    align-items: center;
+    display:inline-flex;
+    padding:4vh 4vh;
+}
+
+.channel4 .captionTop{
+   display:
+}
+
+.popularUploads {
+    width: auto;
+    height: 5vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ytchannels2 {
+    display:flex;
+    align-content: space-around;
+    flex-direction:row;
+    flex-flow:row;
+    align-items: center;
+    padding:40px 40px;
+}
+
+.captionTop {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.captionBottom {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color:grey;
+    overflow: hidden;
+    /*border:20px;
+    padding:20px;*/
+}
+.views {
+    display:block;
+    font-size: 12px;
+    text-align: left;
+    color:grey;
+}
+/*
+.channels-row .div {
+    display: flex;
+    align-content: space-between;
+    align-items: space-between;
+    padding:3vh;
+}
+*/

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Youtube imitation project</title>
 </head>
-<body>
+<body id="body">
     <!-- menu bar on top, including the search bar and login for the user,, divided in 3 sections-->
     <!--the first section goes on the top left-->
     <div class="menubartop">
@@ -38,16 +38,9 @@
     <!--so far only DARK mode works-->
 
     <label class="switch">
-        <input type="checkbox" onclick="body.style.backgroundColor = '#262626';body.style.color ='white';">
+        <input type="checkbox" id="toggle" onclick="change()">
         
-        <!--if (checkbox = true) {
-            onclick="body.style.backgroundColor = '#262626';
-            body.style.color ='white';"
-        }else {
-            onclick="body.style.backgroundColor = '#D9D9D9';
-            body.style.color ='black';"
-            }
-        }> -->
+       
         <span class="slider round"></span>
       </label>
     </div>
@@ -159,5 +152,19 @@
 
     </div>
   </section>
+
+  <script>
+      function change () {
+        if (toggle.checked == true) {
+            body.style.backgroundColor = '#262626';
+            body.style.color ='white';
+        }else {
+            body.style.backgroundColor = '#D9D9D9';
+            body.style.color ='black';
+            }
+      }
+     
+  </script> 
+  
 </body>
 </html>
